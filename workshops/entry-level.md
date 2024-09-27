@@ -1,5 +1,7 @@
 # Entry Level Workshop
 
+A workshop for folks who are just getting started with their cloud development journey. In this workshop we'll talk about why we deploy to the cloud with Defang and what are the easiest ways to get started.
+
 ## Why should I deploy?
 
 1. It's more fun! People can actually use your project. 
