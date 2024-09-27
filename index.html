@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - Markdown Example</title>
+
+	<link rel="stylesheet" href="../dist/reveal.css">
+	<link rel="stylesheet" href="../dist/theme/defang.css" id="theme">
+
+	<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+			<section data-markdown="" data-separator="---SLIDE---" data-separator-vertical="---SECTION---"></section>
+		</div>
+	</div>
+
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const workshop = urlParams.get('workshop');
+		if (workshop) {
+			const markdownFile = workshop + '.md';
+			const markdownPath = 'workshops/' + markdownFile;
+			document.querySelector('section').setAttribute('data-markdown', markdownPath);
+		} else {
+			// Handle the case where the workshop parameter is not present
+			console.error('Workshop parameter is missing');
+		}
+	</script>
+
+	<script src="/dist/reveal.js"></script>
+	<script src="/plugin/markdown/markdown.js"></script>
+	<script src="/plugin/highlight/highlight.js"></script>
+	<script src="/plugin/notes/notes.js"></script>
+	<script src="/plugin/math/math.js"></script>
+
+	<script>
+
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			// The "normal" size of the presentation, aspect ratio will
+			// be preserved when the presentation is scaled to fit different
+			// resolutions. Can be specified using percentage units.
+			width: 1500,
+			height: 1000,
+
+			// Factor of the display size that should remain empty around
+			// the content
+			margin: 0.04,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.05,
+			maxScale: 2.0,
+
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
+
+	</script>
+
+</body>
+
+</html>
