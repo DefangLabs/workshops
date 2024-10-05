@@ -32,8 +32,8 @@ A workshop for folks who are ready to dive into some more advanced Defang featur
 2. Clone the repo
 3. Run `docker compose -f compose.dev.yaml up`
 4. Update, and deploy:
-    a. `git push`
-    b. `defang compose up`
+    1. `git push`
+    2. `defang compose up`
 
 
 ---SLIDE---
