@@ -28,7 +28,7 @@ A workshop for folks who are want to learn to build more complex cloud applicati
 2. Before we can deploy to AWS, we need to setup our AWS credentials in the [AWS console](https://console.aws.amazon.com/).
 3. Run `defang generate` and pick a more complex project or generate one using a prompt.
 4. Check the code (pay attention to environment variables)
-5. Run `defang compose up -Paws` to deploy to AWS.
+5. Run `defang compose up --provider aws` to deploy to AWS.
 
 ---SLIDE---
 
