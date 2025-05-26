@@ -13,6 +13,6 @@ Just a place to keep track of how we organize workshops.
 Write a workshop as a Markdown file (using format expected by https://revealjs.com/) in the [workshops](./workshops) directory.
 
 Then you can load the workshop at this format of url: 
-https://defanglabs.github.io/workshops/?workshop=<workshop-file-name-minus-md>
+`https://defanglabs.github.io/workshops/?workshop=<workshop-file-name-minus-md>`
 
-So if your workshop is in [workshops](./workshops/my-cool-workshop.md) then you would access it at https://defanglabs.github.io/workshops/?workshop=my-cool-workshop
+So if your workshop is in `./workshops/my-cool-workshop.md` then you would access it at `https://defanglabs.github.io/workshops/?workshop=my-cool-workshop`
